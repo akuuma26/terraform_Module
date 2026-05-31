@@ -12,3 +12,11 @@ module "storage_account" {
   jagah        = var.location
   tier         = var.account_tier
 }
+
+module "v_net" {
+    source = "./virtual_network"
+    rgg = var.rg
+    vnet_name = var.vname
+    adda = var.location
+    space = var.address_space
+}
