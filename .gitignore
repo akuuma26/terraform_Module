@@ -1,4 +1,10 @@
-.terraform/
-*.tfstate
-*.tfstate.*
-.terraform.lock.hcl
+
+# Ignore Azure DevOps folder
+azure_devops/
+
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform.lock.hcl
+
